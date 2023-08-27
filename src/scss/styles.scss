@@ -3,8 +3,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 .sk-title-row {
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+	padding-top: 1.3em;
+	padding-bottom: 1.3em;
 	background-color: $blue-200;
 }
 
@@ -16,13 +16,19 @@
 	background-color: $blue-800;
 }
 
+.sk-price-link {
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	background-color: $blue-200;
+}
+
 .sk-content-row {
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
 
 .h1 {
-	font-size: 4em;
+	font-size: 3.5em;
 }
 
 .sk-content-main-text {
