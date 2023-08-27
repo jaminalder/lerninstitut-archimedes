@@ -1,2 +1,44 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+.sk-title-row {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	background-color: $blue-200;
+}
+
+.sk-subtitle {
+	margin-top: 0.6em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	color: $white;
+	background-color: $blue-800;
+}
+
+.sk-content-row {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.h1 {
+	font-size: 4em;
+}
+
+.sk-content-main-text {
+	font-size: 2em;
+}
+
+.sk-content-normal-text {
+	font-size: 1.3em;
+}
+
+.sk-content-list-text {
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+.sk-icon {
+	font-size: 1em;
+	color: $blue-400;
+}
