@@ -8,7 +8,7 @@
 	padding-right: 2%;
 	padding-left: 20%;
 	color: $white;
-	background-color: $blue-800;
+	background-color: rgba(0,29,144,0.75);
 	right: 0%;
 	text-align: right;
 	left: auto;
@@ -19,7 +19,7 @@
 }
 
 .sk-caption {
-	font-size: 3.2em;
+	@include font-size(3.2rem);
 }
 
 .sk-title-row {
@@ -48,23 +48,24 @@
 }
 
 .h1 {
-	font-size: 3.5em;
+	@include font-size(3.5rem);
 }
 
 .sk-content-main-text {
 	font-size: 2em;
+	@include font-size(2rem);
 }
 
 .sk-content-normal-text {
-	font-size: 1.3em;
+	@include font-size(1.3rem);
 }
 
 .sk-content-list-text {
-	font-size: 1.6em;
+	@include font-size(1.6rem);
 	font-weight: bold;
 }
 
 .sk-icon {
-	font-size: 1em;
+	@include font-size(1rem);
 	color: $blue-400;
 }
