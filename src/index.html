@@ -1,277 +1,301 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="input.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="relative flex min-h-screen flex-col justify-center overflow-hidden">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="input.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- <div class="sticky w-full top-0 items-center bg-gray-200"> -->
+        <!--   <a class="flex items-center"> -->
+        <!--   <img src="img/logo.jpg" alt="Logo" class="w-28 h-auto p-2"> -->
+        <!--   <span class="text-xl">Lerninstitut Archimedes</span> -->
+        <!--   </a> -->
+        <!-- </div>   -->
 
-      <img src="img/logo.jpg" alt="Logo" class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2">
-
-
-
-    </div>  
-
-<!-- 
-
-    <header>
-      <nav class="">
-        <div class="">
-          <a class="">
-            <img src="img/logo.jpg" alt="Logo" width="130" height="auto" class="">
-            Schülerkreis Archimedessss
-          </a>
-          <button class="">
-            <span class=""></span>
-          </button>
-          <div class="">
-            <ul class="">
-              <li class="">
-                <a class="">Home</a>
-              </li>
-              <li class="">
-                <a class="">Features</a>
-              </li>
-              <li class="">
-                <a class="">Pricing</a>
-              </li>
-              <li class="">
-                <a class="">Disabled</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-
-      <div id="title-carousel" class="">
-        <div class="">
-          <div class="">
-            <img src="img/zimmer1.jpg" class="">
-            <div class="">
-              <h1 class="">Erfolgreiches Lernen auf allen <br>Schulstufen bis zur Hochschule</h1>
+<div class="min-h-screen bg-gray-400 flex flex-col overflow-hidden">
+        <div class="navbar bg-white md:mx-auto lg:max-w-6xl">
+            <div class="navbar-start">
+          <img src="img/logo.jpg" alt="Logo" class="w-28 h-auto p-2">
+                <a class="btn btn-ghost normal-case text-xl">Schülerkreis Archimedes</a>
             </div>
-          </div>
-          <div class="">
-            <img src="img/zimmer2.jpg" class="">
-            <div class="">
-              <h1 class="">Erfolgreiches Lernen auf allen <br>Schulstufen bis zur Hochschule</h1>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                    <li><a>Item 3</a></li>
+                </ul>
             </div>
-          </div>
-          <div class="">
-            <img src="img/zimmer3.jpg" class="">
-            <div class="">
-              <h1 class="">Erfolgreiches Lernen auf allen <br>Schulstufen bis zur Hochschule</h1>
+            <div class="navbar-end">
+                <div class="dropdown right-0">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 w-52 right-0">
+                        <li><a>Item 1ssdfsdddddd</a></li>
+                        <li><a>Item 2</a></li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+  <div class="relative w-full py-12 bg-white md:mx-auto lg:max-w-6xl">
 
-      <div class="">
+<div class="carousel w-full">
+  <div id="slide1" class="carousel-item relative w-full">
+            <img src="img/zimmer1.jpg" class="w-full">
+    <div class="absolute flex justify-between transform -translate-y-1/2 right-0 top-1/2 text-right text-2xl md:text-5xl bg-blue-900/75 pr-5 pl-24 py-4">
+            <h1 class="">Erfolgreiches Lernen auf allen <br>Schulstufen bis zur Hochschule</h1>
+    </div>
+  </div> 
+  <div id="slide2" class="carousel-item relative w-full">
+            <img src="img/zimmer2.jpg" class="w-full">
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" class="btn btn-circle">❮</a> 
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide3" class="carousel-item relative w-full">
+            <img src="img/zimmer3.jpg" class="w-full">
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" class="btn btn-circle">❮</a> 
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+</div>
+
+<div class="bg-blue-300 text-center py-6 my-5">
+      <h1 class="text-4xl md:text-6xl">Unser Konzept</h1>
+    </div>
+ <div class="mt-8 prose prose-slate mx-auto lg:prose-lg px-6">
+            <p class="lead">Seit über 20 Jahren steht in unserem Lerninstitut das Lernen bei qualifizierten und geschulten Lehrpersonen im Mittelpunkt. Durch die langjährige Erfahrung unseres Teams werden Kinder, Jugendliche und Erwachsene während der Schulzeit, der Lehre, des Studiums oder Weiterbildungen kompetent begleitet und gefördert.</p>
+
+            <div class="">
+            <div class="">
+            <p class="">Unser Unterricht</p>
+            <p class=""></i> steigert die Motivation beim Lernen.</p>
+            <p class=""></i> steigert die Freude am Lernen.</p>
+            <p class=""></i> fördert individuell.</p>
+            </div>
+
+            <div class="">
+            <p class="">Im Unterricht</p>
+            <p class=""></i> begleiten wir die Lernenden zu ihren Zielen.</p>
+            <p class=""></i> feiern wir jeden Lernerfolg.</p>
+            <p class=""></i> erwerben die Lernenden nachhaltige und effiziente Strategien.</p>
+            </div>
+            </div>
+             </div>
+
+  </div>
+  </div>
+  
+  
 
 
-        <div class="">
-          <h1 class="">Unser Konzept</h1>
-        </div>
 
-        <div class="">
-          <div class="">
+        <!-- 
+
+
+
+            <div class="">
+            <h1 class="">Unser Konzept</h1>
+            </div>
+
+            <div class="">
+            <div class="">
             <p class="">Seit über 20 Jahren steht in unserem Lerninstitut das Lernen bei qualifizierten und geschulten Lehrpersonen im Mittelpunkt. Durch die langjährige Erfahrung unseres Teams werden Kinder, Jugendliche und Erwachsene während der Schulzeit, der Lehre, des Studiums oder Weiterbildungen kompetent begleitet und gefördert.</p>
-          </div>
-
-          <div class="">
-            <div class="">
-              <p class="">Unser Unterricht</p>
-              <p class=""></i> steigert die Motivation beim Lernen.</p>
-              <p class=""></i> steigert die Freude am Lernen.</p>
-              <p class=""></i> fördert individuell.</p>
             </div>
 
             <div class="">
-              <p class="">Im Unterricht</p>
-              <p class=""></i> begleiten wir die Lernenden zu ihren Zielen.</p>
-              <p class=""></i> feiern wir jeden Lernerfolg.</p>
-              <p class=""></i> erwerben die Lernenden nachhaltige und effiziente Strategien.</p>
+            <div class="">
+            <p class="">Unser Unterricht</p>
+            <p class=""></i> steigert die Motivation beim Lernen.</p>
+            <p class=""></i> steigert die Freude am Lernen.</p>
+            <p class=""></i> fördert individuell.</p>
             </div>
-          </div>
 
-        </div>
+            <div class="">
+            <p class="">Im Unterricht</p>
+            <p class=""></i> begleiten wir die Lernenden zu ihren Zielen.</p>
+            <p class=""></i> feiern wir jeden Lernerfolg.</p>
+            <p class=""></i> erwerben die Lernenden nachhaltige und effiziente Strategien.</p>
+            </div>
+            </div>
 
-        <div class="">
-          <h1 class="">Unser Angebot</h1>
-        </div>
+            </div>
 
-        <div class="">
-          <div class="">
+            <div class="">
+            <h1 class="">Unser Angebot</h1>
+            </div>
+
+            <div class="">
+            <div class="">
             <p class="">Dem Schülerkreis-Archimedes-Team ist es von höchster Wichtigkeit, den Schülern das Lernen zu erleichtern und sie für den Aufbau ihres Wissensschatzes zu begeistern. Unsere Institution stellt dafür ein breit gefächertes Angebot bereit:</p>
-          </div>
+            </div>
 
-          <div class="">
             <div class="">
-              <img src="img/mathe.jpg" class="">
+            <div class="">
+            <img src="img/mathe.jpg" class="">
             </div>
             <div class="">
-              <p class="">Mathematik und Physik</p>
-              <ul>
-                <li>Universität, Hochschule und Technikum</li>
-                <li>Kantons-, Sekundar-, Real- und Primarschule</li>
-                <li>Fachmittelschule</li>
-                <li>Berufsschule</li>
-                <li>Erwachsene</li>
-              </ul>
+            <p class="">Mathematik und Physik</p>
+            <ul>
+            <li>Universität, Hochschule und Technikum</li>
+            <li>Kantons-, Sekundar-, Real- und Primarschule</li>
+            <li>Fachmittelschule</li>
+            <li>Berufsschule</li>
+            <li>Erwachsene</li>
+            </ul>
             </div>
-          </div>
+            </div>
 
-          <div class="">
             <div class="">
-              <img src="img/sprachen.jpg" class="">
-            </div>
             <div class="">
-              <p class="">Sprachen</p>
-              <ul>
-                <li>Deutsch, Französisch, Englisch, Spanisch, Portugiesisch, Italienisch, Latein</li>
-                <li>Universität, Hochschule und Technikum</li>
-                <li>Kantons-, Sekundar-, Real- und Primarschule</li>
-                <li>Fachmittelschule</li>
-                <li>Berufsschule</li>
-                <li>Erwachsene</li>
-                <li>Vorbereitung auf verschiedene Sprachdiplome (A1-C2)</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="">
-            <div class="">
-              <img src="img/angebot.jpg" class="">
+            <img src="img/sprachen.jpg" class="">
             </div>
             <div class="">
-              <p class="">Auf Anfrage</p>
-              <ul>
-                <li>Korrekturlesen</li>
-                <li>Übersetzungen</li>
-                <li>Musiktheorie</li>
-                <li>Informatik (Grundlagen der Programmierung)</li>
-              </ul>
+            <p class="">Sprachen</p>
+            <ul>
+            <li>Deutsch, Französisch, Englisch, Spanisch, Portugiesisch, Italienisch, Latein</li>
+            <li>Universität, Hochschule und Technikum</li>
+            <li>Kantons-, Sekundar-, Real- und Primarschule</li>
+            <li>Fachmittelschule</li>
+            <li>Berufsschule</li>
+            <li>Erwachsene</li>
+            <li>Vorbereitung auf verschiedene Sprachdiplome (A1-C2)</li>
+            </ul>
             </div>
-          </div>
+            </div>
 
-        </div>
+            <div class="">
+            <div class="">
+            <img src="img/angebot.jpg" class="">
+            </div>
+            <div class="">
+            <p class="">Auf Anfrage</p>
+            <ul>
+            <li>Korrekturlesen</li>
+            <li>Übersetzungen</li>
+            <li>Musiktheorie</li>
+            <li>Informatik (Grundlagen der Programmierung)</li>
+            </ul>
+            </div>
+            </div>
 
-        <div class="">
-          <h1 class="">Unser Team</h1>
-        </div>
+            </div>
 
-        <div class="">
+            <div class="">
+            <h1 class="">Unser Team</h1>
+            </div>
 
-          <div class="">
+            <div class="">
+
+            <div class="">
             <p class="">Dein zukünftiger Mathematik- und Physiklehrer</p>
             <p class=""><b>Antônio Peters</b> unterrichtet seit <b>43 Jahren</b> Erwachsene, Jugendliche und Kinder in Mathematik und Physik. Mit viel <b>Kreativität, Einfühlungsvermögen</b> und grosser <b>Virtuosität</b> lässt er die Lernenden den Stoff verstehen.</p>
-          </div>
+            </div>
 
-          <div class="">
+            <div class="">
             <p class="">Deine zukünftige Deutsch- und Fremdsprachenlehrerin</p>
             <p class=""><b>Annella Peters</b> unterrichtet seit über <b>20 Jahren</b> Erwachsene, Jugendliche und Kinder in <b>Deutsch, Französisch, Englisch, Portugiesisch, Spanisch, Italienisch</b> und <b>Latein</b>. Sie ist als <b>Übersetzerin</b> und <b>Dolmetscherin</b> tätig und korrigiert als <b>Lektorin</b> schriftliche Arbeiten in den unterschiedlichsten Bereichen.</p>
-          </div>
+            </div>
 
-          <div class="">
+            <div class="">
             <p class="">Susanna Seifert</p>
             <p class=""><b>Susanna Seifert</b> ist erfahrene <b>Lehrperson</b> im <b>Primarschulbereich</b>. Ihr Ziel ist es, effizient zu lernen und die eigenen Fähigkeiten auszuschöpfen.</p>
-          </div>
+            </div>
 
-        </div>
+            </div>
 
-        <div class="">
-          <h1 class="">Unser Unterricht</h1>
-        </div>
+            <div class="">
+            <h1 class="">Unser Unterricht</h1>
+            </div>
 
-        <div class="">
-          <div class="">
+            <div class="">
+            <div class="">
             <p class="">Intensive Einzelbetreuung</p>
             <p class="">Privatunterricht in Gruppen mit bis zu vier Teilnehmenden</p>
             <p class="">Online-Unterricht für Lernende aus anderen Kantonen</p>
-          </div>
-          <div class="">
+            </div>
+            <div class="">
             <p class="">
             <h4>Unterrichtsort</h4>
             <p>Schülerkreis Archimedes<br/>Burgstrasse 10<br/>8750 Glarus</p>
             <h4>Unterrichtszeit</h4>
             <p>Montag bis Freitag 12:30 bis 22:00</p>
             <p>Termin nach Vereinbarung</p>
-          </div>
-        </div>
+            </div>
+            </div>
 
-        <div class="">
-          <h1 class="">Preisübersicht</h1>
-        </div>
+            <div class="">
+            <h1 class="">Preisübersicht</h1>
+            </div>
 
-        <div class="">
+            <div class="">
 
-          <div class="">
+            <div class="">
             <p class="">Gruppenunterricht</p>
             <p class="">Fr. 42</p>
             <p class="">pro Lektion à 50 min</p>
             <p class="">Anmelden</p>
-          </div>
+            </div>
 
-          <div class="">
+            <div class="">
             <p class="">Einzelunterricht</p>
             <p class="">Fr. 76</p>
             <p class="">pro Lektion à 50 min</p>
             <p class="">Anmelden</p>
-          </div>
+            </div>
 
-          <p class=""></p>
-        </div>
+            <p class=""></p>
+            </div>
 
-        <div class="">
-          <h1 class="">Melden Sie sich an</h1>
-        </div>
+            <div class="">
+            <h1 class="">Melden Sie sich an</h1>
+            </div>
 
-        <div class="">
+            <div class="">
 
-        </div>
+            </div>
 
-        <div class="">
-          <h1 class="">Kontakt und Feedback</h1>
-        </div>
+            <div class="">
+            <h1 class="">Kontakt und Feedback</h1>
+            </div>
 
-        <div class="">
+            <div class="">
 
-          <div class="">
+            <div class="">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.9939447515026!2d9.066922076408458!3d47.04034962690807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47852dadf68eef51%3A0x97a268050aeba2c3!2sSch%C3%BClerkreis%20Archimedes!5e0!3m2!1sen!2sch!4v1693147313818!5m2!1sen!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+            </div>
 
-          <div class="">
+            <div class="">
             <p class="">Haben Sie Fragen zu unserem Unterricht oder möchten Sie uns eine Rückmeldung geben? Zögern Sie nicht uns zu schreiben. Wir freuen und über Ihre Nachricht.</p>
             <form>
-              <div class="">
-                <label for="name" class="">Name</label>
-                <input type="input" class="">
-              </div>
-              <div class="">
-                <label for="email" class="">E-Mail</label>
-                <input type="email" class="">
-              </div>
-              <div class="">
-                <label for="telefon" class="">Telefonnummer</label>
-                <input type="input" class="">
-              </div>
-              <div class="">
-                <label for="nachricht" class="">Nachricht</label>
-                <textarea type="input" class=""></textarea>
-              </div>
-              <button type="submit" class="">Submit</button>
+            <div class="">
+            <label for="name" class="">Name</label>
+            <input type="input" class="">
+            </div>
+            <div class="">
+            <label for="email" class="">E-Mail</label>
+            <input type="email" class="">
+            </div>
+            <div class="">
+            <label for="telefon" class="">Telefonnummer</label>
+            <input type="input" class="">
+            </div>
+            <div class="">
+            <label for="nachricht" class="">Nachricht</label>
+            <textarea type="input" class=""></textarea>
+            </div>
+            <button type="submit" class="">Submit</button>
             </form>
-          </div>
+            </div>
 
-        </div>
+            </div>
 
-      </div>
-    </main>>
--->
-  </body>
+            </div>
+            </main>>
+        -->
+    </body>
 </html>
