@@ -199,11 +199,11 @@
                     </div>
                 </div>
 
-                <div class="bg-blue-300 text-center py-6 my-5">
+                <div class="bg-blue-300 text-center py-6 my-8">
                     <h1 class="text-4xl md:text-6xl font-bold">Preisübersicht</h1>
                 </div>
 
-                <div class="mt-8 px-6">
+                <div class="grid grid-cols-1 space-y-8 md:grid-cols-2 md:space-x-8 md:space-y-0 px-6">
 
                     <div class="text-center rounded-2xl shadow-xl">
                         <div class="bg-blue-900 font-bold text-white py-2 my-2 rounded-t-2xl text-xl">
@@ -211,7 +211,7 @@
                         </div>
                         <p class="text-6xl my-3">Fr. 42</p>
                         <p class="my-3">pro Lektion à 50 min</p>
-                        <div class="bg-blue-300 font-bold py-2 my-2 rounded-b-2xl">
+                        <div class="bg-blue-300 font-bold py-2 rounded-b-2xl">
                             <p class="">Anmelden</p>
                         </div>
                     </div>
@@ -222,14 +222,14 @@
                         </div>
                         <p class="text-6xl my-3">Fr. 76</p>
                         <p class="my-3">pro Lektion à 50 min</p>
-                        <div class="bg-blue-300 font-bold py-2 my-2 rounded-b-2xl">
+                        <div class="bg-blue-300 font-bold py-2 rounded-b-2xl">
                             <p class="">Anmelden</p>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="bg-blue-300 text-center py-6 my-5">
+                <div class="bg-blue-300 text-center py-6 my-8">
                     <h1 class="text-4xl md:text-6xl font-bold">Anmeldung</h1>
                 </div>
 
@@ -237,32 +237,22 @@
                     <h1 class="text-4xl md:text-6xl font-bold">Kontakt und Feedback</h1>
                 </div>
 
-                <div class="mt-8 px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 mt-8 px-6">
 
-                    <div class="">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.9939447515026!2d9.066922076408458!3d47.04034962690807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47852dadf68eef51%3A0x97a268050aeba2c3!2sSch%C3%BClerkreis%20Archimedes!5e0!3m2!1sen!2sch!4v1693147313818!5m2!1sen!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="w-full mb-8 md:px-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.9939447515026!2d9.066922076408458!3d47.04034962690807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47852dadf68eef51%3A0x97a268050aeba2c3!2sSch%C3%BClerkreis%20Archimedes!5e0!3m2!1sen!2sch!4v1693147313818!5m2!1sen!2sch" class="w-full h-72" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
 
-                    <div class="">
-                        <p class="">Haben Sie Fragen zu unserem Unterricht oder möchten Sie uns eine Rückmeldung geben? Zögern Sie nicht uns zu schreiben. Wir freuen und über Ihre Nachricht.</p>
+                    <div class="md:px-3">
+                        <p class="mb-6">Haben Sie Fragen zu unserem Unterricht oder möchten Sie uns eine Rückmeldung geben? Zögern Sie nicht uns zu schreiben. Wir freuen und über Ihre Nachricht.</p>
                         <form>
-                            <div class="">
-                                <label for="name" class="">Name</label>
-                                <input type="input" class="">
+                            <div class="flex flex-col space-y-3">
+                                <input type="text" placeholder="Name" class="input input-bordered w-full max-w-sm" />
+                                <input type="text" placeholder="E-Mail" class="input input-bordered w-full max-w-sm" />
+                                <input type="text" placeholder="Telefonnummer" class="input input-bordered w-full max-w-sm" />
+                                <textarea class="textarea textarea-bordered w-full max-w-sm h-32" placeholder="Nachricht"></textarea>
+                                <button class="btn btn-primary w-full max-w-sm">Senden</button>
                             </div>
-                            <div class="">
-                                <label for="email" class="">E-Mail</label>
-                                <input type="email" class="">
-                            </div>
-                            <div class="">
-                                <label for="telefon" class="">Telefonnummer</label>
-                                <input type="input" class="">
-                            </div>
-                            <div class="">
-                                <label for="nachricht" class="">Nachricht</label>
-                                <textarea type="input" class=""></textarea>
-                            </div>
-                            <button type="submit" class="">Submit</button>
                         </form>
                     </div>
 
