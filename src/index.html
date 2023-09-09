@@ -149,31 +149,31 @@
                     <h1 class="text-4xl md:text-6xl font-bold">Unser Team</h1>
                 </div>
 
-                <div class="mt-8">
+                <div class="mt-8 px-6">
 
                     <div class="">
                         <div class="bg-blue-900 font-bold text-white text-center py-2 rounded-t-2xl">
                             <p class="">Dein zukünftiger Mathematik- und Physiklehrer</p>
                         </div>
-                        <div class="px-6 py-3">
+                        <div class="py-3">
                             <p class=""><b>Antônio Peters</b> unterrichtet seit <b>43 Jahren</b> Erwachsene, Jugendliche und Kinder in Mathematik und Physik. Mit viel <b>Kreativität, Einfühlungsvermögen</b> und grosser <b>Virtuosität</b> lässt er die Lernenden den Stoff verstehen.</p>
                         </div>
                     </div>
 
                     <div class="">
-                        <div class="bg-blue-900 font-bold text-white text-center py-2 my-2 rounded-t-2xl">
+                        <div class="bg-blue-900 font-bold text-white text-center py-2 mt-6 rounded-t-2xl">
                             <p class="">Deine zukünftige Deutsch- und Fremdsprachenlehrerin</p>
                         </div>
-                        <div class="px-6 py-3">
+                        <div class="py-3">
                             <p class=""><b>Annella Peters</b> unterrichtet seit über <b>20 Jahren</b> Erwachsene, Jugendliche und Kinder in <b>Deutsch, Französisch, Englisch, Portugiesisch, Spanisch, Italienisch</b> und <b>Latein</b>. Sie ist als <b>Übersetzerin</b> und <b>Dolmetscherin</b> tätig und korrigiert als <b>Lektorin</b> schriftliche Arbeiten in den unterschiedlichsten Bereichen.</p>
                         </div>
                     </div>
 
                     <div class="">
-                        <div class="bg-blue-900 font-bold text-white text-center py-2 my-2 rounded-t-2xl">
+                        <div class="bg-blue-900 font-bold text-white text-center py-2 mt-6 rounded-t-2xl">
                             <p class="">Susanna Seifert</p>
                         </div>
-                        <div class="px-6 py-3">
+                        <div class="py-3">
                             <p class=""><b>Susanna Seifert</b> ist erfahrene <b>Lehrperson</b> im <b>Primarschulbereich</b>. Ihr Ziel ist es, effizient zu lernen und die eigenen Fähigkeiten auszuschöpfen.</p>
                         </div>
 
@@ -232,6 +232,30 @@
                 <div class="bg-blue-300 text-center py-6 my-8">
                     <h1 class="text-4xl md:text-6xl font-bold">Anmeldung</h1>
                 </div>
+
+                <div class="mt-8 px-6">
+                    <button class="btn btn-primary w-full max-w-sm" onclick="anmeldung_modal.showModal()">Anmelden</button>
+
+                </div>
+
+                <dialog id="anmeldung_modal" class="modal">
+                    <div class="modal-box">
+                        <form method="dialog">
+                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        </form>
+                        <form method="dialog">
+                            <div class="flex flex-col space-y-3">
+                                <input type="text" placeholder="Name" class="input input-bordered w-full max-w-sm" />
+                                <input type="text" placeholder="E-Mail" class="input input-bordered w-full max-w-sm" />
+                                <input type="text" placeholder="Telefonnummer" class="input input-bordered w-full max-w-sm" />
+                                <textarea class="textarea textarea-bordered w-full max-w-sm h-32" placeholder="Nachricht"></textarea>
+                                <button class="btn btn-primary w-full max-w-sm">Senden</button>
+                            </div>
+                        </form>
+                    </div>
+                </dialog>
+
+
 
                 <div class="bg-blue-300 text-center py-6 my-5">
                     <h1 class="text-4xl md:text-6xl font-bold">Kontakt und Feedback</h1>
