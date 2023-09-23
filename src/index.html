@@ -243,12 +243,39 @@
                         <form method="dialog">
                             <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                         </form>
+                        <div class="bg-blue-300 text-center py-6 my-8">
+                            <h1 class="text-4xl md:text-6xl font-bold">Anmeldung</h1>
+                        </div>
                         <form method="dialog">
                             <div class="flex flex-col space-y-3">
-                                <input type="text" placeholder="Name" class="input input-bordered w-full max-w-sm" />
-                                <input type="text" placeholder="E-Mail" class="input input-bordered w-full max-w-sm" />
-                                <input type="text" placeholder="Telefonnummer" class="input input-bordered w-full max-w-sm" />
-                                <textarea class="textarea textarea-bordered w-full max-w-sm h-32" placeholder="Nachricht"></textarea>
+                                <input type="text" placeholder="Name, Vorname des/der Schülers/in" class="input input-bordered w-full max-w-sm" />
+                                <input type="text" placeholder="Geburtsdatum" class="input input-bordered w-full max-w-sm" />
+                                <input type="text" placeholder="Wohnort, Strasse, Nr." class="input input-bordered w-full max-w-sm" />
+                                <input type="text" placeholder="Telefon privat" class="input input-bordered w-full max-w-sm" />
+                                <input type="text" placeholder="Mobiltelefon" class="input input-bordered w-full max-w-sm" />
+                                <input type="text" placeholder="E-Mail-Adresse des/der Schülers/in" class="input input-bordered w-full max-w-sm" />
+                                <input type="text" placeholder="Name der Erziehungsberechtigten" class="input input-bordered w-full max-w-sm" />
+                                <input type="text" placeholder="Schule / Schulstufe" class="input input-bordered w-full max-w-sm" />
+                                <input type="text" placeholder="Schule / Schulstufe" class="input input-bordered w-full max-w-sm" />
+                                <textarea class="textarea textarea-bordered w-full max-w-sm h-32" placeholder="Bitte geben Sie an, in welchem Bereich wir Sie unterstützen dürfen"></textarea>
+                                <p class="text-xl w-full max-w-sm" />Unterrichtsart</p>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <input type="radio" name="unterrichtsart" class="radio" />
+                                        <span class="label-text">Gruppenunterricht</span> 
+                                    </label>
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <input type="radio" name="unterrichtsart" class="radio" />
+                                        <span class="label-text text-left">Einzelunterricht</span> 
+                                    </label>
+                                </div>
+
+
+                                <input type="text" placeholder="Unterrichtsart" class="input input-bordered w-full max-w-sm" />
+                                <input type="text" placeholder="Lektionen / Woche" class="input input-bordered w-full max-w-sm" />
+                                <input type="text" placeholder="Mögliche Unterrichtstage (mit Zeitangabe)" class="input input-bordered w-full max-w-sm" />
                                 <button class="btn btn-primary w-full max-w-sm">Senden</button>
                             </div>
                         </form>
