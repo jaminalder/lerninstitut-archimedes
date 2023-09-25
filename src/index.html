@@ -7,7 +7,7 @@
     </head>
     <body>
 
-        <nav class="sticky top-0 z-50 bg-gray-400">
+        <nav class="sticky top-0 z-50 bg-white">
             <div class="navbar bg-white md:mx-auto lg:max-w-6xl">
                 <div class="navbar-start">
                     <img src="img/logo.jpg" alt="Logo" class="w-28 h-auto p-2">
@@ -43,7 +43,7 @@
             </div>
         </nav>
 
-        <div class="min-h-screen bg-gray-400 flex flex-col overflow-hidden z-0">
+        <div class="min-h-screen bg-white flex flex-col overflow-hidden z-0">
 
             <div class="relative w-full py-12 bg-white mx-auto lg:max-w-6xl">
 
@@ -198,6 +198,11 @@
                         </div>
 
                     </div>
+
+                    <div class="">
+                            <button class="btn bg-blue-900 text-white w-full mt-8 rounded-2xl hover:text-blue-900" onclick="archimedes.showModal()">Warum Archimedes?</a>
+
+                    </div>
                 </div>
 
                 <div class="bg-blue-300 text-center py-6 my-12 scroll-m-24" id="unterricht">
@@ -257,11 +262,11 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 mt-8 px-6">
 
                     <div class="w-full mb-8 md:px-3">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.9939447515026!2d9.066922076408458!3d47.04034962690807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47852dadf68eef51%3A0x97a268050aeba2c3!2sSch%C3%BClerkreis%20Archimedes!5e0!3m2!1sen!2sch!4v1693147313818!5m2!1sen!2sch" class="w-full h-72" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.9939447515026!2d9.066922076408458!3d47.04034962690807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47852dadf68eef51%3A0x97a268050aeba2c3!2sSch%C3%BClerkreis%20Archimedes!5e0!3m2!1sen!2sch!4v1693147313818!5m2!1sen!2sch" class="w-full h-80" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
 
                     <div class="md:px-3">
-                        <button class="btn btn-outline btn-primary mx-4 my-6" onclick="anmeldung_modal.showModal()">Melden Sie sich hier zum Unterricht an</button>
+                        <button class="btn btn-outline border-blue-900 text-blue-900 hover:text-white hover:bg-blue-900 mx-4 my-6" onclick="anmeldung_modal.showModal()">Melden Sie sich hier zum Unterricht an</button>
                         <p class="mb-6">Haben Sie Fragen zu unserem Unterricht oder möchten Sie uns eine Rückmeldung geben? Zögern Sie nicht uns zu schreiben. Wir freuen und über Ihre Nachricht.</p>
                         <form action="https://submit-form.com/caNo4qPZ">
                             <div class="flex flex-col space-y-3">
@@ -275,7 +280,7 @@
                                 <input type="text" name="Email" placeholder="E-Mail" class="input input-bordered w-full max-w-sm" />
                                 <input type="text" name="Telefonnummer" placeholder="Telefonnummer" class="input input-bordered w-full max-w-sm" />
                                 <textarea name="Nachricht" class="textarea textarea-bordered w-full max-w-sm h-32" placeholder="Nachricht"></textarea>
-                                <button type="submit" class="btn btn-primary w-full max-w-sm">Senden</button>
+                                <button type="submit" class="btn bg-blue-900 text-white hover:text-blue-900 w-full max-w-sm">Senden</button>
                             </div>
                         </form>
                     </div>
@@ -326,7 +331,7 @@
 
                                 <input type="text" name="lektionen_woche" placeholder="Lektionen / Woche" class="input input-bordered w-full max-w-sm" />
                                 <input type="text" name="tage_zeiten" placeholder="Mögliche Unterrichtstage (mit Zeitangabe)" class="input input-bordered w-full max-w-sm" />
-                                <button type="submit" class="btn btn-primary w-full max-w-sm">anmelden</button>
+                                <button type="submit" class="btn bg-blue-900 text-white hover:text-blue-900 w-full max-w-sm">anmelden</button>
                             </div>
                         </form>
                     </div>
@@ -343,6 +348,16 @@
                     <div class="modal-box items-center">
                         <h3 class="font-bold text-lg text-center my-12">Vielen Dank für Ihre Anmeldung!</h3>
                         <a class="btn btn-sm w-full" href="https://jaminalder.github.io/lerninstitut-archimedes/#kontakt">schliessen</a>
+                    </div>
+                </dialog>
+
+                <dialog id="archimedes" class="modal">
+                    <div class="modal-box items-center">
+                        <img class="mt-8 object-cover w-96 mx-auto" src="img/archimedes.jpg">
+                        <p class="text-lg text-center my-12"><b>Archimedes von Syrakus</b> (ca. 287 v. Chr.) war ein antiker <b>Mathematiker, Physiker</b> und <b>Ingenieur</b> und gilt als der produktivste Wissenschaftler des Altertums. Bekannt für seinen ausgeprägten schöpferischen Geist, legte er durch seine Entdeckungen und Werke die Grundmauern für den heutigen Wissensstand. Archimedes entdeckte u.a. Formeln der Mathematik sowie das Volumen der Kugel und die Formel der Flächenberechnung des Arbelos (vgl. Logo). Mit dem formulierten Hebelgesetz brachte er die Entwicklung der Mechanik in Gang und entdeckte das Auftriebsprinzip (Archimedes: „Heureka“ „Ich hab’s gefunden!“).</p>
+                        <form>
+                        <button class="btn btn-sm w-full">schliessen</button>
+                        </form>
                     </div>
                 </dialog>
 
